@@ -362,6 +362,321 @@ def race_results():
         print("Lewis Hamilton - 1:14:165")
         print("Total Laps of the race: 78")
 
+    elif choice == 9:
+            print("Circuit Gilles Villeneuve (Canada)")
+            print("Top 10 Finishers:")
+            results8 = [
+                "1. Max Verstappen (Red Bull Racing Honda)",
+                "2. Lando Norris (Mclaren Mercedes)",
+                "3. George Russell (Mercedes AMG Petronas)",
+                "4. Lewis Hamilton (Mercedes AMG Petronas)",
+                "5. Oscar Piastri (Mclaren Mercedes)",
+                "6. Fernando Alonso (Aston Martin Aramco Mercedes)",
+                "7. Lance Stroll (Aston Martin Aramco Mercedes)",
+                "8. Daniel Ricciardo (RB Honda RBPT)",
+                "9. Pierre Gasly (Alpine Renault)",
+                "10. Esteban Ocon (Alpine Renault)"
+            ]
+            for result in results8:
+                print(result)
+            print("Fastest Lap of the race:")
+            print("Lewis Hamilton - 1:14.856")
+            print("Total Laps of the race: 70 Laps")
+
+    elif choice == 10:
+            print("Circuit de Barcelona-Catalunya (Spain)")
+            print("Top 10 Finishers:")
+            results9 = [
+                "1. Max Verstappen (Red Bull Racing Honda)",
+                "2. Lando Norris (Mclaren Mercedes)",
+                "3. Lewis Hamilton (Mercedes AMG Petronas)",
+                "4. George Russell (Mercedes AMG Petronas)",
+                "5. Charles Leclerc (Scuderia Ferrari)",
+                "6. Carlos Sainz (Scuderia Ferrari)",
+                "7. Oscar Piastri (Mclaren Mercedes)",
+                "8. Sergio Checo Perez (Red Bull Racing Honda)",
+                "9. Pierre Gasly (Alpine Renault)",
+                "10. Esteban Ocon (Alpine Renault)"
+            ]
+            for result in results9:
+                print(result)
+            print("Fastest Lap of the race:")
+            print("Lando Norris - 1:17.115")
+            print("Total Laps of the race: 66 Laps")
+
+    elif choice == 11:
+            print("Red Bull Ring (Austria)")
+            print("Top 10 Finishers:")
+            results10 = [
+                "1. George Russell (Mercedes AMG Petronas)",
+                "2. Oscar Piastri (Mclaren Mercedes)",
+                "3. Carlos Sainz (Scuderia Ferrari)",
+                "4. Lewis Hamilton (Mercedes AMG Petronas)",
+                "5. Max Verstappen (Red Bull Racing Honda)",
+                "6. Nico Hulkenberg (Hass Ferrari)",
+                "7. Sergio Checo Perez (Red Bull Racing Honda)",
+                "8. Kevin Magnussen (Hass Ferrari)",
+                "9. Daniel Ricciardo (RB Honda RBPT)",
+                "10. Pierre Gasly (Alpine Renault)"
+            ]
+            for result in results10:
+                print(result)
+            print("Fastest Lap of the race:")
+            print("Fernando Alonso - 1:07.694")
+            print("Total Laps of the race: 71 Laps")
+
+    elif choice == 12:
+            print("Silverstone Circuit (Great Britain)")
+            print("Top 10 Finishers:")
+            results11 = [
+                "1. Lewis Hamilton (Mercedes AMG Petronas)",
+                "2. Max Verstappen (Red Bull Racing Honda)",
+                "3. Lando Norris (Mclaren Mercedes)",
+                "4. Oscar Piastri (Mclaren Mercedes)",
+                "5. Carlos Sainz (Scuderia Ferrari)",
+                "6. Nico Hulkenberg (Hass Ferrari)",
+                "7. Lance Stroll (Aston Martin Aramco Mercedes)",
+                "8. Fernando Alonso (Aston Martin Aramco Mercedes)",
+                "9. Alexander Albon (Williams Mercedes )",
+                "10. Yuki Tsunoda (RB Honda RBPT)"
+            ]
+            for result in results11:
+                print(result)
+            print("Fastest Lap of the race:")
+            print("Carlos Sainz - 1:28.293")
+            print("Total Laps of the race: 52 Laps")
+
+    elif choice == 13:
+            print("Hungaroring Circuit (Hungary)")
+            print("Top 10 Finishers:")
+            results12 = [
+                "1. Oscar Piastri (Mclaren Mercedes)",
+                "2. Lando Norris (Mclaren Mercedes)",
+                "3. Lewis Hamilton (Mercedes AMG Petronas)",
+                "4. Charles Leclerc (Scuderia Ferrari)",
+                "5. Max Verstappen (Red Bull Racing Honda)",
+                "6. Carlos Sainz (Scuderia Ferrari)",
+                "7. Sergio Checo Perez (Red Bull Racing Honda)",
+                "8. George Russell (Mercedes AMG Petronas)",
+                "9. Yuki Tsunoda (RB Honda RBPT)",
+                "10. Lance Stroll (Aston Martin Aramco Mercedes)"
+            ]
+            for result in results12:
+                print(result)
+            print("Fastest Lap of the race:")
+            print("George Russell - 1:20.305")
+            print("Total Laps of the race: 70 Laps")
+
+    elif choice == 14:
+            print("Circuit de Spa-Francochamps (Belgium)")
+            print("Top 10 Finishers:")
+            results13 = [
+                "1. Lewis Hamilton (Mercedes AMG Petronas)",
+                "2. Oscar Piastri (Mclaren Mercedes)",
+                "3. Charles Leclerc (Scuderia Ferrari)",
+                "4. Max Verstappen (Red Bull Racing Honda)",
+                "5. Lando Norris (Mclaren Mercedes)",
+                "6. Carlos Sainz (Scuderia Ferrari)",
+                "7. Sergio Checo Perez (Red Bull Racing Honda)",
+                "8. Fernando Alonso (Aston Martin Aramco Mercedes)",
+                "9. Esteban Ocon (Alpine Renault)",
+                "10. Danial Ricciardo (RB Honda RBPT)"
+            ]
+            for result in results13:
+                print(result)
+            print("Fastest Lap of the race:")
+            print("Sergio Checo Perez - 1:44.701")
+            print("Total Laps of the race: 44 Laps")
+
+    elif choice == 15:
+            print("Circuit Zandvoort (Netherlands)")
+            print("Top 10 Finishers:")
+            results14 = [
+                "1. Lando Norris (Mclaren Mercedes)",
+                "2. Max Verstappen (Red Bull Racing Honda)",
+                "3. Charles Leclerc (Scuderia Ferrari)",
+                "4. Oscar Piastri (Mclaren Mercedes)",
+                "5. Charles Leclerc (Scuderia Ferrari)",
+                "6. Sergio Checo Perez (Red Bull Racing Honda)",
+                "7. George Russell (Mercedes AMG Petronas)",
+                "8. Lewis Hamilton (Mercedes AMG Petronas)",
+                "9. Pierre Gasly (Alpine Renault)",
+                "10. Fernando Alonso (Aston Martin Aramco Mercedes)"
+            ]
+            for result in results14:
+                print(result)
+            print("Fastest Lap of the race:")
+            print("Lando Norris - 1:13.817")
+            print("Total Laps of the race: 72 Laps")
+
+    elif choice == 16:
+            print("Autodromo Nazionale Monza (Italy)")
+            print("Top 10 Finishers:")
+            results15 = [
+                "1. Charles Leclerc (Scuderia Ferrari)",
+                "2. Oscar Piastri (Mclaren Mercedes)",
+                "3. Lando Norris (Mclaren Mercedes)",
+                "4. Carlos Sainz (Scuderia Ferrari)",
+                "5. Lewis Hamilton (Mercedes AMG Petronas)",
+                "6. Max Verstappen (Red Bull Racing Honda)Carlos Sainz (Scuderia Ferrari)",
+                "7. George Russell (Mercedes AMG Petronas)",
+                "8. Sergio Checo Perez (Red Bull Racing Honda)",
+                "9. Alexander Albon (Williams Mercedes)",
+                "10. Kevin Magnussen (Hass Ferrari)"
+            ]
+            for result in results15:
+                print(result)
+            print("Fastest Lap of the race:")
+            print("Lando Norris - 1:21.432")
+            print("Total Laps of the race: 53 Laps")
+
+    elif choice == 17:
+            print("Baku City Circuit (Azerbaijan)")
+            print("Top 10 Finishers:")
+            results16 = [
+                "1. Oscar Piastri (Mclaren Mercedes)",
+                "2. Charles Leclerc (Scuderia Ferrari)Lando Norris (Mclaren Mercedes)",
+                "3. George Russell (Mercedes AMG Petronas)",
+                "4. Lando Norris (Mclaren Mercedes)",
+                "5. Max Verstappen (Red Bull Racing Honda)",
+                "6. Fernando Alonso (Aston Martin Aramco Mercedes)",
+                "7. Alexander Albon (Williams Mercedes)",
+                "8. Franco Colapinto (Williams Mercedes)",
+                "9. Lewis Hamilton (Mercedes AMG Petronas)",
+                "10. Oliver Bearman (Hass Ferrari)"
+            ]
+            for result in results16:
+                print(result)
+            print("Fastest Lap of the race:")
+            print("Lando Norris - 1:45.255")
+            print("Total Laps of the race: 51 Laps")
+
+    elif choice == 18:
+            print("Marina Bay Street Circuit (Singapore)")
+            print("Top 10 Finishers:")
+            results17 = [
+                "1. Lando Norris (Mclaren Mercedes)",
+                "2. Max Verstappen (Red Bull Racing Honda)",
+                "3. Oscar Piastri (Mclaren Mercedes)",
+                "4. George Russell (Mercedes AMG Petronas)",
+                "5. Charles Leclerc (Scuderia Ferrari)",
+                "6. Lewis Hamilton (Mercedes AMG Petronas)",
+                "7. Carlos Sainz (Scuderia Ferrari)",
+                "8. Fernando Alonso (Aston Martin Aramco Mercedes)",
+                "9. Nico Hulkenberg (Hass Ferrari)",
+                "10. Sergio Checo Perez (Red Bull Racing Honda)"
+            ]
+            for result in results17:
+                print(result)
+            print("Fastest Lap of the race:")
+            print("Daniel Ricciardo - 1:34.486")
+            print("Total Laps of the race: 62 Laps")
+
+    elif choice == 19:
+            print("Circuit of the Americas (United States)")
+            print("Top 10 Finishers:")
+            results18 = [
+                "1. Charles Leclerc (Scuderia Ferrari)",
+                "2. Carlos Sainz (Scuderia Ferrari)",
+                "3. Max Verstappen (Red Bull Racing Honda)",
+                "4. Lando Norris (Mclaren Mercedes)",
+                "5. Oscar Piastri (Mclaren Mercedes)",
+                "6. George Russell (Mercedes AMG Petronas)",
+                "7. Sergio Checo Perez (Red Bull Racing Honda)",
+                "8. Nico Hulkenberg (Hass Ferrari)",
+                "9. Liam Lawson (RB Honda RBPT)",
+                "10. Franco Colapinto (Williams Mercedes)"
+            ]
+            for result in results18:
+                print(result)
+            print("Fastest Lap of the race:")
+            print("Esteban Ocon - 1:37.330")
+            print("Total Laps of the race: 56 Laps")
+
+    elif choice == 20:
+            print("Autodromo Hermanos Rodriguez (Mexico)")
+            print("Top 10 Finishers:")
+            results19 = [
+                "1. Carlos Sainz (Scuderia Ferrari)",
+                "2. Lando Norris (Mclaren Mercedes)",
+                "3. Charles Leclerc (Scuderia Ferrari)",
+                "4. Lewis Hamilton (Mercedes AMG Petronas)",
+                "5. George Russell (Mercedes AMG Petronas)",
+                "6. Max Verstappen (Red Bull Racing Honda)",
+                "7. Kevin Magnussen (Hass Ferrari)",
+                "8. Oscar Piastri (Mclaren Mercedes)",
+                "9. Nico Hulkenberg (Hass Ferrari)",
+                "10. Pierre Gasly (Alpine Renault)"
+            ]
+            for result in results19:
+                print(result)
+            print("Fastest Lap of the race:")
+            print("Charles Leclerc - 1:18.336")
+            print("Total Laps of the race: 71 Laps")
+
+    elif choice == 21:
+            print("Jose Carlos Pace, Sao Paulo (Brazil)")
+            print("Top 10 Finishers:")
+            results20 = [
+                "1. Max Verstappen (Red Bull Racing Honda)",
+                "2. Esteban Ocon (Alpine Renault)",
+                "3. Pierre Gasly (Alpine Renault)",
+                "4. George Russell (Mercedes AMG Petronas)",
+                "5. Charles Leclerc (Scuderia Ferrari)",
+                "6. Lando Norris (Mclaren Mercedes)",
+                "7. Yuki Tsunoda (RB Honda RBPT)",
+                "8. Oscar Piastri (Mclaren Mercedes)",
+                "9. Liam Lawson (RB Honda RBPT)",
+                "10. Lewis Hamilton (Mercedes AMG Petronas)"
+            ]
+            for result in results20:
+                print(result)
+            print("Fastest Lap of the race:")
+            print("Max Verstappen - 1:20.472")
+            print("Total Laps of the race: 69 Laps")
+
+    elif choice == 22:
+            print("Las Vegas Strip Circuit (Las Vegas)")
+            print("Top 10 Finishers:")
+            results21 = [
+                "1. George Russell (Mercedes AMG Petronas)",
+                "2. Lewis Hamilton (Mercedes AMG Petronas)",
+                "3. Carlos Sainz (Scuderia Ferrari)",
+                "4. Charles Leclerc (Scuderia Ferrari)",
+                "5. Max Verstappen (Red Bull Racing Honda)",
+                "6. Lando Norris (Mclaren Mercedes)",
+                "7. Oscar Piastri (Mclaren Mercedes)",
+                "8. Nico Hulkenberg (Hass Ferrari)",
+                "9. Yuki Tsunoda (RB Honda RBPT)",
+                "10. Sergio Checo Perez (Red Bull Racing Honda)"
+            ]
+            for result in results21:
+                print(result)
+            print("Fastest Lap of the race:")
+            print("Lando Norris - 1:34.876")
+            print("Total Laps of the race: 50 Laps")
+
+    elif choice == 23:
+            print("Lusial International Circuit (Qatar)")
+            print("Top 10 Finishers:")
+            results22 = [
+                "1. Max Verstappen (Red Bull Racing Honda)",
+                "2. Charles Leclerc (Scuderia Ferrari)",
+                "3. Oscar Piastri (Mclaren Mercedes)",
+                "4. George Russell (Mercedes AMG Petronas)",
+                "5. Pierre Gasly (Alpine Renault)",
+                "6. Carlos Sainz (Scuderia Ferrari)",
+                "7. Fernando Alonso (Aston Martin Aramco Mercedes)",
+                "8. Zhou Guanyu (Kick Sauber Ferrari)",
+                "9. Kevin Magnussen (Hass Ferrari)",
+                "10. Lando Norris (Mclaren Mercedes)"
+            ]
+            for result in results22:
+                print(result)
+            print("Fastest Lap of the race:")
+            print("Lando Norris - 1:22.384")
+            print("Total Laps of the race: 57 Laps")
+
     elif choice == 24:
         print("Yas Marina Circuit (Abu Dhabi)")
         print("Top 10 Finishers:")
