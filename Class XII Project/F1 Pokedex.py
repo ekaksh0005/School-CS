@@ -761,51 +761,103 @@ def fun_quiz():
 def driver_teams():
     log_activity("Accessed Driver Teams Information")
     update_app_statistics("driver_teams")
-    
     print("Formula 1 Driver Teams:")
-    teams = [
-        "1. Scuderia Ferrari",
-        "2. McLaren Mercedes", 
-        "3. Oracle Red Bull Racing",
-        "4. Mercedes AMG Petronas",
-        "5. Stake Kick Sauber",
-        "6. BWT Alpine Renault",
-        "7. Hass Ferrari",
-        "8. RB Honda RBPT",
-        "9. Aston Martin Aramco Mercedes",
-        "10. Williams Mercedes"
-    ]
-    
-    for team in teams:
-        print(team)
-    
-    try:
-        choice2 = int(input("Which team details would you like (1-10): "))
-        
-        team_info = {
-            1: ("Scuderia Ferrari", "1950", "Piero Ferrari and Exor N.V", "Maranello, Italy", "16", "Charles Leclerc and Carlos Sainz", "Frederic Vasseur"),
-            2: ("McLaren Mercedes", "1966", "Bahrain Mumtalakat Holding Company and Mclaren", "Woking, United Kingdom", "9", "Lando Norris and Oscar Piastri", "Andrea Stella"),
-            3: ("Oracle Red Bull Racing", "1997", "Dietrich Mateschitz", "Milton Keynes, United Kingdom", "6", "Max Verstappen and Sergio Checo Perez", "Christian Horner"),
-            4: ("Mercedes AMG Petronas", "1970", "Mercedes Benz and Toto Wolff", "Brackley, United Kingdom", "8", "Lewis Hamilton and George Russell", "Toto Wolff"),
+    print("1. Scuderia Ferrari")
+    print("2. McLaren Mercedes")
+    print("3. Oracle Red Bull Racing")
+    print("4. Mercedes AMG Petronas")
+    print("5. Stake Kick Sauber")
+    print("6. BWT Alpine Renault")
+    print("7. Hass Ferrari")
+    print("8. RB Honda RBPT")
+    print("9. Aston Martin Aramco Mercedes")
+    print("10. Williams Mercedes")
+    choice2 = ("Which team details would you like:")
+    if choice2 == 1:
+        print("Scuderia Ferrari:")
+        print("Founded in 1950")
+        print("Current owners: Piero Ferrari and Exor N.V")
+        print("Home ground: Maranello, Italy")
+        print("Total World Championships: 16 ")
+        print("Current drivers: Charles Leclerc and Carlos Sainz")
+        print("Team Principle: Frederic Vasseur")
+    elif choice2 == 2:
+        print("McLaren Mercedes:")
+        print("Founded in 1966")
+        print("Current owners: Bahrain Mumtalakat Holding Company and Mclaren")
+        print("Home ground: Woking, United Kingdom")
+        print("Total World Championships: 9")
+        print("Current drivers: Lando Norris and Oscar Piastri")
+        print("Team Principle: Andrea Stella")
+    elif choice2 == 3:
+        print("Oracle Red Bull Racing:")
+        print("Founded in 1997")
+        print("Current owners: Dietrich Mateschitz")
+        print("Home ground: Milton Keynes, United Kingdom")
+        print("Total World Championships: 6")
+        print("Current drivers: Max Verstappen and Sergio Checo Perez")
+        print("Team Principle: Christian Horner")
+    elif choice2 == 4:
+        print("Mercedes AMG Petronas:")
+        print("Founded in 1970")
+        print("Current owners: Mercedes Benz and Toto Wolff")
+        print("Home ground: Brackley, United Kingdom")
+        print("Total World Championships: 8")
+        print("Current drivers: Lewis Hamilton and George Russell")
+        print("Team Principle: Toto Wolff")
+    elif choice2 == 5:
+        print("Stake Kick Sauber:")
+        print("Founded in 1993")
+        print("Current owners: Audi and Qatar")
+        print("Home ground: Hinwil, Switzerland")
+        print("Total World Championships: 0")
+        print("Current drivers: Vallteri Bottas and Guanyu Zhou")
+        print("Team Principle: Alessandro Alunni Bravi")
+    elif choice2 == 6:
+        print("BWT Alpine Renault:")
+        print("Founded in 1986")
+        print("Current owners: Renault and Renault-Nissan")
+        print("Home ground: Enstone, United Kingdom")
+        print("Total World Championships: 2")
+        print("Current drivers: Pierre Gasly and Jack Doohan")
+        print("Team Principle: Oliver Oakes")
+    elif choice2 == 7:
+        print("Hass Ferrari:")
+        print("Founded in 2016")
+        print("Current owners: Gene Hass")
+        print("Home ground: Kannapolis, United States")
+        print("Total World Championships: 0")
+        print("Current drivers: Nico Hulkenberg and Kevin Magnussen")
+        print("Team Principle: Ayao Komatsu")
+    elif choice2 == 8:
+        print("Visa Cash App RB:")
+        print("Founded in 1985")
+        print("Current owners: Red Bull Gmbh")
+        print("Home ground: Faenza, Italy")
+        print("Total World Championships: 0")
+        print("Current drivers: Yuki Tsunoda and Liam Lawson")
+        print("Team Principle: Laurent Mekies")
+    elif choice2 == 9:
+        print("Aston Martin Aramco Mercedes:")
+        print("Founded in 2018")
+        print("Current owners: Lawrence Stroll")
+        print("Home ground: Silverston, United Kingdom")
+        print("Total World Championships: 0")
+        print("Current drivers: Fernando Alonso and Lance Stroll")
+        print("Team Principle: Mike Krack")
+    elif choice2 == 10:
+        print("Williams Racing:")
+        print("Founded in 1978")
+        print("Current owners: Dorliton Capital")
+        print("Home ground: Grove, United Kingdom")
+        print("Total World Championships: 9")
+        print("Current drivers: Alexander Alon and  Franco Colapinto")
+        print("Team Principle: James Vowles")
             
-        }
-        
-        if choice2 in team_info:
-            name, founded, owners, home, championships, drivers, principal = team_info[choice2]
-            print(f"\n{name}:")
-            print(f"Founded in {founded}")
-            print(f"Current owners: {owners}")
-            print(f"Home ground: {home}")
-            print(f"Total World Championships: {championships}")
-            print(f"Current drivers: {drivers}")
-            print(f"Team Principle: {principal}")
-            
-            log_activity("Viewed Team Information", f"Team: {name}")
-        else:
+        log_activity("Viewed Team Information", f"Team: ")
+    else:
             print("Invalid team selection.")
             
-    except ValueError:
-        print("Invalid input. Please enter a number between 1-10.")
 
 
 def Circuit_Information():
