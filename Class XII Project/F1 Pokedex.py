@@ -895,44 +895,177 @@ def Circuit_Information():
     for number, race in circuit.items():
         print(f"{number}. {race}")
 
-    try:
-        choice = int(input("Enter the number of the circuit you want to see information for: "))
-        circuit_name = circuit.get(choice, "Unknown Circuit")
-        log_activity("Viewed Circuit Information", f"Circuit {choice}: {circuit_name}")
-        
-        
-        circuit_info = {
-            1: {
-                "name": "Bahrain International Circuit",
-                "location": "Bahrain",
-                "length": "5.412 Km",
-                "first_race": "2004",
-                "details": "You can usually expect great racing and decent amounts of overtaking in Bahrain...",
-                "lap_record": "Pedro de la Rosa (2005) : 1:31:447"
-            },
-            8: {
-                "name": "Circuit de Monaco",
-                "location": "Monaco", 
-                "length": "3.337 Km",
-                "first_race": "1950",
-                "details": "Circuit de Monaco is a very popular circuit in Monaco...",
-                "lap_record": "Lewis Hamilton (2018): 1:12:077"
-            }
-        }
-        
-        if choice in circuit_info:
-            info = circuit_info[choice]
-            print(f"\nYou have chosen {info['name']}")
-            print(f"Location: {info['location']}")
-            print(f"Length: {info['length']}")
-            print(f"Date of first race: {info['first_race']}")
-            print(f"Details: {info['details']}")
-            print(f"Lap Record: {info['lap_record']}")
-        else:
-            print("Circuit information not available for this selection.")
-            
-    except ValueError:
-        print("Invalid input. Please enter a number.")
+
+    choice = int(input("Enter the number of the circuit you want to see information for: "))
+    if choice == 1:
+        print("You have chosen Bahrain International circuit")
+        print("Location: Bahrain")
+        print("Length: 5.412 Km")
+        print("Date of first race: 2004")
+        print("Details: You can usually expect great racing and decent amounts of overtaking in Bahrain, while the drivers have to contend with wind, racing under floodlights and the difficulty of finding a decent set-up with the wide temperature fluctuations between sessions. The track’s most challenging point is the tight, downhill, off-camber Turn 10 left-hander, while the fast run through Turn 12 is another highlight, allowing the racers to really feel their cars coming alive.")
+        print("Lap Record: Pedro de la Rosa (2005) : 1:31:447")
+    elif choice == 2:
+        print("You have chosen Jeddah Corniche Circuit")
+        print("Location: Jeddah")
+        print("Length: 6.174 Km")
+        print("Date of first race: 2021")
+        print("Details: Fast. Very fast. Average speeds around the Jeddah Corniche Circuit are around 250km/h – quicker than those at Silverstone, and second on the 2021 calendar only to Monza – aka ‘The Temple of Speed’. It is, quite simply, the fastest street circuit ever seen in Formula 1 – while the track also features the most corners on the calendar with 27, many of them quick, sinuous bends as the drivers wend their way along the Jeddah waterfront.")
+        print("Lap Record: Lewis Hamilton (2021) : 1:30:734")
+    elif choice == 3:
+        print("You have chosen Albert Park Grand Prix Circuit")
+        print("Location: Australia")
+        print("Length: 5.278 Km")
+        print("Date of first race: 1996")
+        print("Details: The Albert Park Grand Prix Circuit is the world's longest Formula 1 circuit, with a length of 21.04 kilometers. It's a classic, narrow, and windy track, with a steep incline and a small, narrow turn-around at the end. The circuit is particularly popular among drivers who enjoy the extreme conditions and the challenging racing at the start of the season.")
+        print("Lap Record: Charels Leclerc (2024) : 1:19:813")
+    elif choice == 4:
+        print("You have chosen Suzuka Circuit")
+        print("Location: Japan")
+        print("Length: 5.807 Km")
+        print("Date of first race: 1987")
+        print("Details: Suzuka Circuit is a very popular circuit in Japan, with a length of 5.807 kilometers. It is a narrow, windy track, with a steep incline and a small, narrow turn-around at the end. The circuit is famous for its iconic, winding, and narrow turns, and is a popular choice for drivers who enjoy the extreme conditions and the challenging racing at the start of the season.")
+        print("Lap Record: Lewis Hamilton (2019) : 1:30:983")
+    elif choice == 5:
+        print("You have chosen Shanghai International Circuit")
+        print("Location: China")
+        print("Length: 5.451 Km")
+        print("Date of first race: 2004")
+        print("Details: Shanghai International Circuit is a very popular circuit in China, with a length of 5.451 kilometers. It is a narrow, windy track, with a steep incline and a small, narrow turn-around at the end. The circuit is famous for its iconic, winding, and narrow turns, and is a popular choice for drivers who enjoy the extreme conditions and the challenging racing at the start of the season.")
+        print("Lap Record: Micheal Schumachar (2004) : 1:32:238")
+    elif choice == 6:
+        print("You have chosen Miami International Autodrome")
+        print("Location: Miami")
+        print("Length: 5.412 Km")
+        print("Date of first race: 2022")
+        print("Details: Miami International Autodrome is a very popular circuit in the United States, with a length of 5.412 kilometers. It is a narrow, windy track, with a steep incline and a small, narrow turn-around at the end. The circuit is famous for its iconic, winding, and narrow turns, and is a popular choice for drivers who enjoy the extreme conditions and the challenging racing at the start of the season.")
+        print("Lap Record: Lewis Hamilton : 1:29:708")
+    elif choice == 7:
+        print("You have chosen Autodromo Internationale Enzo e Dino Ferrari")
+        print("Location: Emilia - Romagna")
+        print("Length: 4.909 Km")
+        print("Date of first race: 1980")
+        print("Details: Autodromo Internationale Enzo e Dino Ferrari is a very popular circuit in Italy, with a length of 6.016 kilometers. It is a narrow, windy track, with a steep incline and a small, narrow turn-around at the end. The circuit is famous for its iconic, winding, and narrow turns, and is a popular choice for drivers who enjoy the extreme conditions and the challenging racing at the start of the season.")
+        print("Lap Record: Lewis Hamilton (2020) : 1:15:484")
+    elif choice == 8:
+        print("You have chosen Circuit de Monaco")
+        print("Location: Monaco")
+        print("Length: 3.337 Km")
+        print("Date of first race: 1950")
+        print("Details: Circuit de Monaco is a very popular circuit in Monaco, with a length of 5.280 kilometers. It is a narrow, windy track, with a steep incline and a small, narrow turn-around at the end. The circuit is famous for its iconic, winding, and narrow turns, and is a popular choice for drivers who enjoy the extreme conditions and the challenging racing at the start of the season.")
+        print("Lap Record: Lewis Hamilton (2018): 1:12:077")
+    elif choice == 9:
+        print("You have chosen Circuit Gilles-Villeneuve Montrael")
+        print("Location: Canada")
+        print("Length: 4.361 Km")
+        print("Date of first race: 1978")
+        print("Details: Circuit Gilles-Villeneuve Montrael is a very popular circuit in Canada, with a length of 4.361 kilometers. It is a narrow, windy track, with a steep incline and a small, narrow turn-around at the end. The circuit is famous for its iconic, winding, and narrow turns, and is a popular choice for drivers who enjoy the extreme conditions and the challenging racing at the start of the season.")
+        print("Lap Record: Vallteri Bottas (2018) : 1:13:078")
+    elif choice == 10:
+        print("You have chosen Circuit de Barcelona-Catalunya")
+        print("Location: Spain")
+        print("Length: 4.657 Km")
+        print("Date of first race: 1991")
+        print("Details: Circuit de Barcelona-Catalunya is a very popular circuit in Spain, with a length of 5.147 kilometers. It is a narrow, windy track, with a steep incline and a small, narrow turn-around at the end. The circuit is famous for its iconic, winding, and narrow turns, and is a popular choice for drivers who enjoy the extreme conditions and the challenging racing at the start of the season.")
+        print("Lap Record: Max Verstappen (2023) : 1:16:330")
+    elif choice == 11:
+        print("You have chosen Red Bull Ring")
+        print("Location: Austria")
+        print("Length: 4.318 Km")
+        print("Date of first race: 1970")
+        print("Details: It’s only wee, bless it, but the Red Bull Ring packs a lot into a short lap. The first half rewards power, as the cars blast along three straights separated by a pair of uphill right-handers. But then as the drivers work their way downhill, the circuit becomes a regular toboggan ride, as the cars canyon through a series of quick corners, including the exhilarating Rindt right-hander, named for Austria’s first F1 champion.")
+        print("Lap Record: Carlos Sainz (2020) : 1:05:619")
+    elif choice == 12:
+        print("You have chosen Silverstone")
+        print("Location: United Kingdom")
+        print("Length: 5.891 Km")
+        print("Date of first race: 1950")
+        print("Details: At the 2018 British Grand Prix, Lewis Hamilton compared a flat-out lap around Silverstone to flying a fighter jet, which should tell you all you need to know about the Northamptonshire circuit. Despite numerous layout changes over the years, Silverstone has always maintained its essential character as one of the fastest tracks on the F1 calendar, while historic corners like Maggotts, Becketts and Abbey provide some of the biggest challenges for racing drivers anywhere in the world.")
+        print("Lap Record: Max Verstappen (2020) : 1:27:097")
+    elif choice == 13:
+        print("You have chosen Hungaroring")
+        print("Location: Hungary")
+        print("Length: 4.381 Km")
+        print("Date of first race: 1986")
+        print("Details: Hungaroring is a very popular circuit in Hungary, with a length of 4.615 kilometers. It is a narrow, windy track, with a steep incline and a small, narrow turn-around at the end. The circuit is famous for its iconic, winding, and narrow turns, and is a popular choice for drivers who enjoy the extreme conditions and the challenging racing at the start of the season.")
+        print("Lap Record: Lewis Hamilton (2020) : 1:16:627")
+    elif choice == 14:
+        print("You have chosen Circuit de Spa-Francorchamps")
+        print("Location: Belgium")
+        print("Length: 7.004 Km")
+        print("Date of first race: 1950")
+        print("Details: Circuit de Spa is a very popular circuit in France, with a length of 4.656 kilometers. It is a narrow, windy track, with a steep incline and a small, narrow turn-around at the end. The circuit is famous for its iconic, winding, and narrow turns, and is a popular choice for drivers who enjoy the extreme conditions and the challenging racing at the start of the season.")
+        print("Lap Record: Sergio Checo Perez (2024) : 1:44:701")
+    elif choice == 15:
+        print("You have chosen Circuit Zandvoort")
+        print("Location: Netherlands")
+        print("Length: 4.259 Km")
+        print("Date of first race: 1952")
+        print("Details: ‘Really quick’, ‘pretty insane’, ‘crazy’ and ‘old-school’ were words used by the current crop of F1 drivers when asked to describe the Zandvoort track that many of them tackled in their junior category days. We’d also add ‘undulating’ to that list. The Zandvoort track swoops and flows through the sand dunes, creating a rollercoaster-like feel to the lap. And while the circuit was modernised in time for F1’s most recent return – including increasing the banking angle at the famous Tarzan corner to an Indianapolis Motor Speedway-trumping 18 degrees – Zandvoort remains a proper, challenging drivers’ track.")
+        print("Lap Record: Lewis Hamilton (2021) : 1:11:097")
+    elif choice == 16:
+        print("You have chosen Autodromo Nazionale Monza")
+        print("Location: Italy")
+        print("Length: 5.793 Km")
+        print("Date of first race: 1950")
+        print("Details: Rapido! Formula 1’s fastest ever lap was set at Monza – Williams driver Juan Pablo Montoya’s 260.6km/h effort during practice for the 2004 Grand Prix – which should give you some idea of the nature of the track the locals call ‘La Pista Magica’. Cars are on full throttle for 80% of the lap, and hit their Vmax on the circuit’s 1.1km start/finish straight. From there, they roar off into the historic park section, where a series of big stops into tight chicanes give the brakes a good workout.")
+        print("Lap Record: Rubens Barichello (2004) : 1:21:046")
+    elif choice == 17:
+        print("You have chosen Baku city Circuit")
+        print("Location: Azerbaijan")
+        print("Length: 6.003 Km")
+        print("Date of first race: 2016")
+        print("Details: A mixture of wide and open and tight and twisty. The lonnnnng main straight along the Baku shoreline is a slipstreaming mecca, and with cars able to run three abreast into Turn 1, the action often looks more IndyCar than F1. However from there, the track loops around into the city’s narrow, winding Icheri Sheher old town, dramatically wending past Baku’s medieval city walls. As in Monaco, slightest mistakes are punished quickly and severely, while set-up wise, the teams are forced to choose between downforce for the twisty bits and less drag for the straight.")
+        print("Lap Record: Charles Leclerc (2019) : 1:43:009")
+    elif choice == 18:
+        print("You have chosen Marina Bay Street Circuit")
+        print("Location: Singapore")
+        print("Length: 4.94 Km")
+        print("Date of first race: 2008")
+        print("Details: The Marina Bay Circuit is one of the most physically demanding on the calendar, its bumpy street surface coupled with humid conditions giving the drivers plenty to think about. Even after a 2023 layout change reducing the number of corners from 23 to 19, they are working the wheel a lot, too, around the high-speed lap – the physical stress causing them to lose as much as 3kg in body weight over the course of a race.")
+        print("Lap Record: Daniel Ricciardo (2024) : 1:34:486")
+    elif choice == 19:
+        print("You have chosen Circuit of the Americas")
+        print("Location: Texas")
+        print("Length: 5.513 Km")
+        print("Date of first race: 1912")
+        print("Details:If the corners at COTA seem familiar, they should be. Turns 3 through 6 look not dissimilar to Silverstone's high-speed run through Maggotts/Becketts or the S Curves at Suzuka, while Turns 12 through 15 mimic Hockenheim's stadium section. Meanwhile, the uphill run into wide, wide Turn 1 – hey, everything’s bigger in Texas, right? – has provided some fine overtaking action in the track’s short life.")
+        print("Lap Record: Charles Leclerc (2019) : 1:36:169")
+    elif choice == 20:
+        print("You have chosen Autodromo Hermanos Rodriguez")
+        print("Location: Mexico")
+        print("Length: 4.304 Km")
+        print("Date of first race: 1963")
+        print("Details: Hungaroring is a very popular circuit in Hungary, with a length of 4.615 kilometers. It is a narrow, windy track, with a steep incline and a small, narrow turn-around at the end. The circuit is famous for its iconic, winding, and narrow turns, and is a popular choice for drivers who enjoy the extreme conditions and the challenging racing at the start of the season.")
+        print("Lap Record: Valtteri Bottas (2021) : 1:17:774")
+    elif choice == 21:
+        print("You have chosen Autodromo Jose Carlos Pace")
+        print("Location: Brazil")
+        print("Length: 4.309 Km")
+        print("Date of first race: 1973")
+        print("Details:Like many pre-World War II tracks, Interlagos features banked corners, with the drivers beginning their lap on a sort of half oval – in fact, between 1957 and the track’s return to the F1 calendar in 1990, Interlagos could be run as a giant oval. After wiggling through the Senna S and down to Turn 4, the drivers then go through a snaking in-field section with some challenging camber changes, before slinging back up the hill and through the banked final turn. ")
+        print("Lap Record: Valtteri Bottas (2018) : 1:10:540")
+    elif choice == 22:
+        print("You have chosen Las Vegas Strip Circuit")
+        print("Location: Las Vegas")
+        print("Length: 6.201 Km")
+        print("Date of first race: 2023")
+        print("Details:Located in the heart of Las Vegas, the new 6.2km, 17-turn street circuit winds its way past iconic locations like Caesars Palace, the Bellagio and the Venetian. With average speeds similar to Monza, otherwise known as F1’s ‘Temple of Speed’, fans are guaranteed plenty of action and overtaking.")
+        print("Lap Record: Lando Norris (2024) : 1:34:876")
+    elif choice == 23:
+        print("You have chosen Lusail International Circuit")
+        print("Location: Qatar")
+        print("Length: 5.419 Km")
+        print("Date of first race: 2021")
+        print("Details: Silverstone is a classic Formula 1 circuit, with a length of 5.494 kilometers. It has a simple layout, with the main straight and narrow turns, and a high-speed lap with a slight downforce. Silverstone has been a popular choice for drivers since its inception in 1958, and has won 16 of the 21 Formula 1 Grand Prixes since then.")
+        print("Lap Record: Lando Norris (2024) : 1:22:384")
+    elif choice == 24:
+        print("You have chosen Yas Marina Circuit")
+        print("Location: Abu Dhabi")
+        print("Length: 5.281 Km")
+        print("Date of first race: 2009")
+        print("Details: The Hermann Tilke-designed track is dominated by its 1.2km straight between Turns 5 and 6 – which, with slow-speed corners marking its beginning and end, makes it a honeypot for overtaking moves. Other highlights include the tricky run through Turns 10 and 11 into 12, which forces the drivers to brake hard with bags of lateral load still on the car. Track modifications ahead of the 2021 race, shortening the lap slightly to 5.28km, have only added to its excitement.")
+        print("Lap Record: Kevin Magnussen (2024) : 1:25:637")
+
 
 
 def export_data():
