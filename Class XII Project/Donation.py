@@ -28,8 +28,8 @@ DB_USER = "root"          # <-- change if needed
 DB_PASS = "12345678"              # <-- put your MySQL password
 DB_NAME = "donation_system"
 
-# A simple, human-readable admin password for viva
-ADMIN_PASSWORD = "admin123"   # You can change this
+
+ADMIN_PASSWORD = "admin123"   
 
 ITEM_TYPES = ("Food", "Clothes", "Money")
 URGENCY_LEVELS = ("Low", "Medium", "High")
