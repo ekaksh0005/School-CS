@@ -68,7 +68,7 @@ a=input('enter a string')
 pallindrome(a)'''
 
 #24 
-'''def hype(a):
+def hype(a):
     l=a.split('-')
     l.sort()
     s=''
@@ -76,6 +76,6 @@ pallindrome(a)'''
         s+=i+'-'
     print (s[0:-1])
 a=input('enter a string')
-hype(a)'''
+hype(a)
 
 #

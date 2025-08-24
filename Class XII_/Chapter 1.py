@@ -18,11 +18,10 @@ x=l.pop()
 l.insert(0,x)
 print(l)'''
 
-#21 A list num contains elements: 3,25,13,6,35,8,14,45
-#WAP to swap the content with the next value divisible by 5
+#21 A list num contains elements: 3,25,13,6,35,8,14,45 WAP to swap the content with the next value divisible by 5
 '''list1=[3,25,13,6,35,8,14,45]
 for i in range(len(list1)):
-    if list[i]%5==0:
+    if list1[i]%5==0:
         list1[i],list1[i-1]=list1[i],list1[i+1]
     print(list1)'''
 
@@ -44,8 +43,7 @@ if t1>t2:
 else:
     print("t2>t1")'''
 
-#24 WAP to input 'n' classes and names of class teachers to store them in a dictionary and display it. Also accept a particular
-#class from user and display name of class teacher of that class
+#24 WAP to input 'n' classes and names of class teachers to store them in a dictionary and display it. Also accept a particular class from user and display name of class teacher of that class
 '''dict1={}
 n=int(input("Enter number of classes to be logged:"))
 for i in range(n):
@@ -55,12 +53,17 @@ for i in range(n):
 class_name=input("Enter class to be searched:")
 print(dict1[class_name])'''
 
-#25 WAP to store student names and their percentage in a dictionary and delete a particular student name from dictionary
-#Also display after deletion
-'''dict1={}
-n=int(input("Enter number of students to be logged:"))
+#25 WAP to store student names and their percentage in a dictionary and delete a particular student name from dictionary. Also display after deletion
+d1=dict()
+n=int(input("Enter the number of students:"))
 for i in range(n):
-    studentname=input("Enter name of student:")
-    percentage=input("Enter percentage of said student:")'''
+    std=input("Enter name of student:")
+    perc=input("Enter percentage:")
+    d1[std]=perc
+
+dt=input("Enter name of student to delete:")
+del d1[dt]
+print(d1)
+
     
 

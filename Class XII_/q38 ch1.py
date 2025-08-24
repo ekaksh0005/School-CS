@@ -1,4 +1,10 @@
-d1={'A':1,"B":2,'C':3}
-d2={'D':4}
-d1.update(d2)
-print(d1)
+def show_words():
+    f = open('notes.txt','r')
+    x = f.readlines()
+    for i in x:
+        a = i.split()
+        if len(a) == 5:
+            print(i)
+    f.close()
+
+show_words()

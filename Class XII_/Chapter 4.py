@@ -62,7 +62,7 @@ def filter(oldfile, newfile):
         file2.write(text)
     file1.close()
     file2.close()
-    filter(sports.dat, atheletics.dat)'''
+    filter(sports.dat, athletics.dat)'''
 
 
 
@@ -105,7 +105,7 @@ amcount()'''
 
 #WAP to read the following details of a sports performance in your school, in  tuple: Sport,competition and prizes won and store into a CSV file delimited by a tab. 
 
-'''import csv
+import csv
 f=open("Sport.csv", "w+")
 t=()
 while True:
@@ -118,9 +118,9 @@ while True:
         break
     a=csv.writer(f,delimiter="\t")
     a.writerow(t)
-f.close()'''
+f.close()
 
-def add(Directory):
+'''def add(Directory):
     a=eval(input("Enter the values"))
     Directory.append(a)
     print(Directory)
@@ -138,5 +138,5 @@ if c=='1':
 if c=='2':
     delete(Directory)
 if c=='3':
-    print(Directory)
+    print(Directory)'''
     
