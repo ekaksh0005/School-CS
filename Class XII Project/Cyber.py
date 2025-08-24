@@ -19,7 +19,6 @@
 # - Classes and advanced features are not used (as per requirement).
 # - Extra comments are added for clarity and explanation during viva.
 # -------------------------------------------------------------------------
-
 import mysql.connector       # To connect Python with MySQL
 import datetime              # To get the current date for complaints
 
