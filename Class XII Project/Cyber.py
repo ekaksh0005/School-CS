@@ -12,12 +12,6 @@
 # 2. Admin can login with a password and access a dashboard.
 # 3. Admin can view all complaints, update their status, or delete them.
 # 4. Complaint data is stored in MySQL.
-#
-# NOTE:
-# - This project is written as per CBSE Class 12 syllabus.
-# - It uses functions, loops, menus, and SQL queries.
-# - Classes and advanced features are not used (as per requirement).
-# - Extra comments are added for clarity and explanation during viva.
 # -------------------------------------------------------------------------
 import mysql.connector       # To connect Python with MySQL
 import datetime              # To get the current date for complaints
